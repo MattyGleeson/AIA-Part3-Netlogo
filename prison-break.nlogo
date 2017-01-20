@@ -251,8 +251,8 @@ to flush-io
 end
 
 to send
-  output-print (word "output: " cmd-string)
-  sock2:write cmd-string
+  output-print (word "sending: " cmd-string)
+  sock2:write (word "\"(" cmd-string ")\"")
 end
 
 to nil
@@ -405,7 +405,7 @@ INPUTBOX
 733
 429
 cmd-string
-move
+move the pris to H
 1
 0
 String
