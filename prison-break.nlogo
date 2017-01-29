@@ -252,7 +252,7 @@ end
 
 to send
   output-print (word "sending: " cmd-string)
-  sock2:write (word "\"(" cmd-string ")\"")
+  sock2:write (word "\"" cmd-string "\"")
 end
 
 to nil
